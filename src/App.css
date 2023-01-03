@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+.light {
+  background-color: #fff;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  /* width: 1240px;
+  height: 900px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section {
+  background-image: url("./img/img1.jpg");
+  background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section:hover {
+  outline: 2px solid #356eff;
+}
+
+.section-nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  color: #ffff;
+}
+
+.name {
+  text-transform: uppercase;
+  margin-left: 60px;
+  margin-top: 27px;
+  font-size: 40px;
+  font-family: "Aladin", cursive;
+}
+.list {
+  list-style: none;
+  display: flex;
+  margin-right: 60px;
+  margin-top: 20px;
+  font-size: 18px;
+  vertical-align: top;
+}
+
+.blur {
+  backdrop-filter: blur(0px);
+  /* -webkit-backdrop-filter: blur(20px); */
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  height: 90vh;
 }
 
-.App-link {
-  color: #61dafb;
+.text-top {
+  width: 767px;
+  height: 95px;
+  font-size: 72px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #45e6fc 0%, #356eff 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-bottom {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.7);
+  width: 740px;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.button {
+  text-transform: uppercase;
+  padding: 15px 25px;
+  margin: 30px;
+  background: linear-gradient(to right, #45e6fc 0%, #356eff 100%);
+  color: #fff;
+}
+
+/* .button:hover {
+  transform: scale(1, 1.1);
+} */
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 60px;
+}
+
+.right {
+  background-image: url(img/img2.png);
 }
