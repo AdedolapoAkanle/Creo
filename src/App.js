@@ -23,10 +23,10 @@ function App() {
             <div className="section-nav">
               <div className="name">Creo</div>
               <li className="list">
-                <ul>Home</ul>
-                <ul>About</ul>
-                <ul>Pricing</ul>
-                <ul>Contact Us</ul>
+                <ul className="li home">Home</ul>
+                <ul className="li">About Us</ul>
+                <ul className="li">Pricing</ul>
+                <ul className="li">Contact Us</ul>
               </li>
             </div>
             <div className="main">
@@ -40,27 +40,70 @@ function App() {
           </div>
         </section>
         <section className="about-section">
-          <div className="left">
-            <div className="about">about us</div>
-            <div className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-              facere. Eos ut, in temporibus magni perspiciatis expedita unde
-              eligendi tenetur quaerat quasi animi iure totam et doloribus fuga
-              consequuntur fugit.
-            </div>
+          <div className="abt">
+            <div className="left">
+              <div className="about">about us</div>
+              <hr />
+              <div className="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium magnam beatae praesentium nulla dicta, laborum id.
+                Rerum officiis molestiae.
+              </div>
 
-            <li>
-              <ul>
-                <img src="./img/Vector(1).png" alt="" />
-                Design
-              </ul>
-              <ul>
-                <img src="img/" alt="" />
-                Branding
-              </ul>
-            </li>
+              <li className="about-list">
+                <ul className="list-val">
+                  <img src="./img/Vector(1).png" alt="" />
+                  Design
+                  <div className="about-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium magnam beatae praesentium nulla dicta, laborum
+                    id.
+                  </div>
+                </ul>
+                <ul className="list-val">
+                  <img src="img/" alt="" />
+                  Branding
+                  <div className="about-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium magnam beatae praesentium nulla dicta, laborum
+                    id.
+                  </div>
+                </ul>
+              </li>
+            </div>
+            <div className="right">{/* <h1>Welcome</h1> */}</div>
           </div>
-          <div className="right"></div>
+        </section>
+        <section className="offer-section">
+          <div className="offer-header">
+            What we Offer <hr className="offer-hr" />
+          </div>
+          <div className="options">
+            <div className="option">
+              <img src="" alt="" />
+              <div className="offer-header">Amazing UI</div>
+              <div className="option-text">
+                Amazing UI Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Egestas nullam vitae montes, ipsum, erat consequat eros
+              </div>
+            </div>
+            <div className="option">
+              <img src="" alt="" />
+              <div className="offer-header">Creative Websites</div>
+              <div className="option-text">
+                Amazing UI Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Egestas nullam vitae montes, ipsum, erat consequat eros
+              </div>
+            </div>
+            <div className="option">
+              <img src="" alt="" />
+              <div className="offer-header">Fast Delivery</div>
+              <div className="option-text">
+                Amazing UI Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Egestas nullam vitae montes, ipsum, erat consequat eros
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
