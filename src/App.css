@@ -128,7 +128,7 @@
   color: rgba(58, 58, 58, 0.7);
 }
 
-hr {
+.about-hr {
   width: 80px;
   margin-left: 0px;
   background: linear-gradient(to right, #45e6fc 0%, #356eff 100%);
@@ -157,12 +157,22 @@ hr {
 
 .list-val {
   font-size: 24px;
+  display: flex;
+}
+
+.list-image {
+  margin: 10px 20px;
 }
 
 /* Offer Section */
 .offer-section {
   background-color: #f2f2f2;
-  height: 80vh;
+  height: 90vh;
+}
+
+.offer-image {
+  height: 56px;
+  width: 56px;
 }
 .offer-header {
   text-align: center;
@@ -195,8 +205,210 @@ hr {
 
 .offer-hr {
   width: 80px;
-  margin-left: 0px;
   background: linear-gradient(to right, #45e6fc 0%, #356eff 100%);
   height: 2px;
   border: none;
+}
+
+/*Pricing -section*/
+
+.pricing-section {
+  height: 120vh;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 150px;
+  padding: 0;
+  /* padding: 100px 50px; */
+}
+
+.card {
+  background: #f2f2f2;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  color: rgba(58, 58, 58, 0.7);
+  height: 90vh;
+  width: 300px;
+}
+
+.card-type {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.card-price {
+  margin-top: 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.card-symbol {
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.card-list {
+  margin-top: 10px;
+  list-style: none;
+}
+
+.card-list-val {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 13px 10px;
+  margin: 0 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(58, 58, 58, 0.2);
+}
+
+.card-list-val-blue {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-image {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.card-img {
+  height: 40px;
+  width: 40px;
+}
+
+.card-blue {
+  background: #356eff;
+  color: #ffff;
+}
+
+.card-btn {
+  background-color: #356eff;
+  padding: 12px 17px;
+  font-size: 14px;
+  text-align: center;
+  margin: 25px 60px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  color: #ffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card-btn-1 {
+  margin-top: 210px;
+}
+
+.card-btn-blue {
+  background-color: #ffff;
+  color: #356eff;
+  margin-top: 116px;
+}
+
+.check {
+  height: 15px;
+  width: 15px;
+}
+
+/*works section*/
+
+.works-section {
+  height: 130vh;
+  background-image: url(img/bg.png);
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 150px;
+  flex-wrap: wrap;
+  border-top-left-radius: 2px solid red;
+  padding: 10px;
+}
+
+.work-image {
+  margin: 10px 0px;
+  width: 300px;
+  height: 200px;
+}
+
+.image-tag {
+  /* margin: 0px 50px; */
+  margin-top: -15px;
+  margin-bottom: 30px;
+  padding: 15px 12px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #040402;
+  color: #ffff;
+}
+
+.image-name {
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.image-link {
+  font-size: 14px;
+  background: linear-gradient(to right, #45e6fc 0%, #356eff 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  cursor: pointer;
+}
+
+/* Team Section */
+
+.team-section {
+  height: 100vh;
+  background-color: #e5e5e5;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 130px;
+}
+
+.box {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #45e6fc, #356eff) 1;
+  border-radius: 10px;
+  width: 200px;
+  padding: 60px 60px;
+}
+
+.box-name {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 24px;
+  color: #3a3a3a;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.box-description {
+  text-align: center;
+  font-size: 18px;
+  color: rgba(58, 58, 58, 0.7);
+  margin-top: 10px;
+}
+.box-icon {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.team-hr {
+  display: flex;
+  height: 2px;
+  justify-content: space-between;
 }
