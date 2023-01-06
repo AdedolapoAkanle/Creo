@@ -12,13 +12,23 @@ import check2 from "./img/white-check.png";
 import photo from "./img/photography.png";
 import med from "./img/med.png";
 import couple from "./img/couple.png";
+import img2 from "./img/img2.png";
 import img3 from "./img/img3.png";
 import img4 from "./img/img4.png";
 import img5 from "./img/img5.png";
-import insta from "./img/insta.png";
+import img6 from "./img/img6.png";
+import img7 from "./img/img7.png";
+import img8 from "./img/img8.png";
+import img9 from "./img/img9.png";
 import insta2 from "./img/insta2.png";
 import twitter from "./img/twitter.png";
 import facebook from "./img/facebook.png";
+import insta from "./img/insta.png";
+import fb from "./img/fb.png";
+import twt from "./img/twt.png";
+import arrow from "./img/Arrow.png";
+import clock from "./img/clock.png";
+import map from "./img/map.png";
 
 function App() {
   // let img1 = require("./img/")
@@ -59,6 +69,8 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* About section */}
         <section className="about-section">
           <div className="abt">
             <div className="left">
@@ -100,9 +112,13 @@ function App() {
                 </ul>
               </li>
             </div>
-            <div className="right"></div>
+            <div className="right">
+              <img src={img2} alt="" />
+            </div>
           </div>
         </section>
+
+        {/* Offer section */}
         <section className="offer-section">
           <div className="offer-header">
             What we Offer <hr className="offer-hr" />
@@ -286,12 +302,14 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* Works section */}
         <section className="works-section">
           <div className="offer-header">
             Latest Works <hr className="offer-hr" />
           </div>
           {/* <div className="box1">red</div> */}
-          <div className="img-container">
+          <div className="picture-container">
             <div className="work-img">
               <img className="work-image" src={photo} alt="" />
               <div className="image-tag">
@@ -336,6 +354,8 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* Team section */}
         <section className="team-section">
           <div className="offer-header">
             Our Team <hr className="offer-hr" />
@@ -382,6 +402,98 @@ function App() {
             <hr />
             <hr />
             <hr />
+          </div>
+        </section>
+
+        {/* Latest section */}
+        <section className="latest-section">
+          <div className="offer-header">
+            Latest News <hr className="offer-hr" />
+          </div>
+          <div className="latest-image">
+            <div className="img-container">
+              <img className="latest-img" src={img9} alt="" />
+              <div className="text-block">
+                <div>How to Get that client of your Choice</div>
+                <p>
+                  <img className="clock" src={clock} alt="" />
+                  <div className="days">3days ago</div>
+                </p>
+              </div>
+            </div>
+            <div className="img-container">
+              <img className="latest-img" src={img6} alt="" />
+              <div className="text-block">
+                <div>Stay at the top of business meetings</div>
+                <p>
+                  <img className="clock" src={clock} alt="" />
+                  <div className="days">3days ago</div>
+                </p>
+              </div>
+            </div>
+            <div className="img-container">
+              <img className="latest-img" src={img7} alt="" />
+              <div className="text-block">
+                <div>How to get inspired fast</div>
+                <p>
+                  <img className="clock" src={clock} alt="" />
+                  <div className="days">3days ago</div>
+                </p>
+              </div>
+            </div>
+            <div className="img-container">
+              <img className="latest-img" src={img8} alt="" />
+              <div className="text-block">
+                <div>Know at all times what a client wants</div>
+                <p>
+                  <img className="clock" src={clock} alt="" />
+                  <div className="days">3days ago</div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact section*/}
+        <section className="contact-section">
+          <div className="contact">
+            <div className="contact-info">
+              <div className="about">contact us</div>
+              <hr className="about-hr " />
+              <div className="contact-field">
+                <input className="input" type="text" placeholder="Name" />
+                <input className="input" type="text" placeholder="Message" />
+                <div className="contact-btn">message</div>
+              </div>
+            </div>
+            <div className="contact-map">
+              <img className="map" src={map} alt="" />
+            </div>
+          </div>
+        </section>
+        <section className="footer-section">
+          <div className="footer-content">
+            <div className="footer-name">Creo</div>
+            <div className="footer-text">
+              <div className="foot">Follow us on </div>
+
+              <div className="span">
+                <img className="footer-icon" src={insta} alt="" />
+                <img className="footer-icon" src={twt} alt="" />
+                <img className="footer-icon" src={fb} alt="" />
+              </div>
+            </div>
+            <div className="footer-text">
+              <div className="foot">Subscribe to our News letter</div>
+              <div className="footer-input">
+                <input
+                  className="footer-field"
+                  type="text"
+                  placeholder="Email"
+                />
+                <img className="arrow" src={arrow} alt="" />
+              </div>
+            </div>
           </div>
         </section>
       </div>

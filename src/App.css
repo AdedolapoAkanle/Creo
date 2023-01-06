@@ -101,6 +101,8 @@
   cursor: pointer;
 }
 
+/* About section */
+
 .about-section {
   display: flex;
   height: 88vh;
@@ -142,10 +144,7 @@
 }
 
 .right {
-  width: 550px;
-  height: 550px;
-  margin-left: 70px;
-  background-image: url(img/img2.png);
+  margin-left: 50px;
 }
 
 .about-list {
@@ -319,10 +318,10 @@
 
 .works-section {
   height: 130vh;
-  background-image: url(img/bg.png);
+  background-color: #e5e5e5;
 }
 
-.img-container {
+.picture-container {
   display: flex;
   justify-content: space-between;
   margin: 40px 150px;
@@ -366,7 +365,7 @@
 
 .team-section {
   height: 100vh;
-  background-color: #e5e5e5;
+  background-color: #f2f2f2;
 }
 
 .box-container {
@@ -376,12 +375,29 @@
 }
 
 .box {
-  border-width: 1px;
-  border-style: solid;
-  border-image: linear-gradient(to right, #45e6fc, #356eff) 1;
   border-radius: 10px;
+  border: 1px solid;
+  border-image: linear-gradient(to right, #45e6fc, #356eff) 1;
   width: 200px;
   padding: 60px 60px;
+  position: relative;
+  /* padding: 10px 20px; */
+  /* background: #fff; */
+  margin: 5px;
+  border-radius: 1px;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -5px;
+  border-radius: inherit;
+  background-image: linear-gradient(to right, #45e6fc, #356eff);
 }
 
 .box-name {
@@ -403,12 +419,187 @@
 }
 .box-icon {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  width: 150px;
   margin-top: 30px;
+  margin-left: 22px;
 }
 
 .team-hr {
   display: flex;
   height: 2px;
   justify-content: space-between;
+}
+
+/* Latest Section */
+
+.latest-section {
+  background-color: #e5e5e5;
+  height: 100vh;
+}
+
+.latest-image {
+  display: flex;
+  margin-top: 40px;
+}
+.latest-img {
+  display: flex;
+  align-items: flex-end;
+  width: 280px;
+}
+
+.img-container {
+  position: relative;
+  margin: 0 18px;
+}
+
+.text-block {
+  position: absolute;
+  text-align: center;
+  width: 230px;
+  bottom: 35px;
+  left: 35px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.clock {
+  width: 15px;
+  margin-bottom: -2px;
+  margin-right: 10px;
+  /* text-align: left; */
+}
+
+p {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  margin: 10px 65px;
+  font-weight: 100;
+}
+
+/* Contact section  */
+
+.contact-section {
+  height: 90vh;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px;
+}
+
+.contact-field {
+  margin-top: 40px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info {
+  padding: 25px 0;
+  width: 600px;
+}
+
+.contact-map {
+  margin: 0px 40px;
+  margin-left: 80px;
+}
+
+.map {
+  height: 500px;
+  width: 500px;
+}
+
+.input {
+  padding: 15px 0;
+  margin: 20px 0;
+  border: none;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(to right, #45e6fc, #356eff);
+  border-image-slice: 1;
+  width: 100%;
+  font-size: 15px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.contact-btn {
+  background: linear-gradient(to right, #45e6fc, #356eff);
+  padding: 12px 20px;
+  width: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Footer section */
+
+.footer-section {
+  height: 30vh;
+  background-color: #111;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-name {
+  text-transform: uppercase;
+  margin-left: 60px;
+  margin-top: 50px;
+  font-size: 40px;
+  font-family: "Aladin", cursive;
+}
+
+.footer-text {
+  margin-top: 27px;
+  margin-right: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.foot {
+  text-align: center;
+}
+.footer-field {
+  width: 280px;
+  background: none;
+  border: none;
+}
+
+.footer-field:focus {
+  outline: none;
+}
+
+.footer-input {
+  background-color: #fff;
+  padding: 15px;
+  padding-bottom: 12px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.footer-icon {
+  width: 25px;
+}
+
+.span {
+  width: 120px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  width: 18px;
+  cursor: pointer;
 }
