@@ -31,22 +31,20 @@ import clock from "./img/clock.png";
 import map from "./img/map.png";
 
 function App() {
-  // let img1 = require("./img/")
-  // const [theme, setTheme] = useState("light");
-  // const toggleTheme = () => {
-  //   if (theme === "light") {
-  //     setTheme("dark");
-  //   } else {
-  //     setTheme("light");
-  //   }
-  // };
-  // useEffect(() => {
-  //   document.body.className = theme;
-  // }, [theme]);
-  //`App ${theme}`
+  const [theme, setTheme] = useState("light");
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
   return (
     <div className="App">
-      {/* <button onClick={toggleTheme}>Switch</button> */}
+      <button onClick={toggleTheme}>Switch</button>
       <div className="container">
         <section className="section">
           <div className="blur">
@@ -71,7 +69,7 @@ function App() {
         </section>
 
         {/* About section */}
-        <section className="about-section">
+        <section className={`about-section ${theme}`}>
           <div className="abt">
             <div className="left">
               <div className="about">about us</div>
@@ -85,7 +83,7 @@ function App() {
               <li className="about-list">
                 <ul className="list-val">
                   <div className="list-image">
-                    <img src={design} alt="" />
+                    <img className="list-icon" src={design} alt="" />
                   </div>
                   <div className="">
                     Design
@@ -98,7 +96,7 @@ function App() {
                 </ul>
                 <ul className="list-val">
                   <div className="list-image">
-                    <img src={brand} alt="" />
+                    <img className="list-icon" src={brand} alt="" />
                   </div>
                   <div className="">
                     {" "}
@@ -113,21 +111,21 @@ function App() {
               </li>
             </div>
             <div className="right">
-              <img src={img2} alt="" />
+              <img className="about-image" src={img2} alt="" />
             </div>
           </div>
         </section>
 
         {/* Offer section */}
-        <section className="offer-section">
+        <section className={`offer-section ${theme}`}>
           <div className="offer-header">
             What we Offer <hr className="offer-hr" />
           </div>
           <div className="options">
             <div className="option">
-              <img src={design} alt="" />
+              <img className="offer-image" src={design} alt="" />
               <div className="offer-header">Amazing UI</div>
-              <div className="option-text">
+              <div className="option-text text-1">
                 Amazing UI Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit. Egestas nullam vitae montes, ipsum, erat consequat eros
               </div>
@@ -143,14 +141,14 @@ function App() {
             <div className="option">
               <img className="offer-image" src={fast} alt="" />
               <div className="offer-header">Fast Delivery</div>
-              <div className="option-text">
+              <div className="option-text text-1">
                 Amazing UI Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit. Egestas nullam vitae montes, ipsum, erat consequat eros
               </div>
             </div>
           </div>
         </section>
-        <section className="pricing-section">
+        <section className={`pricing-section ${theme}`}>
           <div className="offer-header">
             Pricing Packages <hr className="offer-hr" />
           </div>
@@ -363,38 +361,38 @@ function App() {
           <div className="box-container">
             <div className="box">
               <div className="image-container">
-                <img src={img5} alt="" />
+                <img className="team-image" src={img5} alt="" />
               </div>
               <div className="box-name">thomas jackson</div>
               <div className="box-description">Brand Consultant</div>
               <div className="box-icon">
-                <img src={insta2} alt="" />
-                <img src={twitter} alt="" />
-                <img src={facebook} alt="" />
+                <img className="team-icon" src={insta2} alt="" />
+                <img className="team-icon" src={twitter} alt="" />
+                <img className="team-icon" src={facebook} alt="" />
               </div>
             </div>
             <div className="box">
               <div className="image-container">
-                <img src={img4} alt="" />
+                <img className="team-image" src={img4} alt="" />
               </div>
               <div className="box-name">thomas jackson</div>
               <div className="box-description">CEO</div>
               <div className="box-icon">
-                <img src={insta2} alt="" />
-                <img src={twitter} alt="" />
-                <img src={facebook} alt="" />
+                <img className="team-icon" src={insta2} alt="" />
+                <img className="team-icon" src={twitter} alt="" />
+                <img className="team-icon" src={facebook} alt="" />
               </div>
             </div>
             <div className="box">
               <div className="image-container">
-                <img src={img3} alt="" />
+                <img className="team-image" src={img3} alt="" />
               </div>
               <div className="box-name">thomas jackson</div>
               <div className="box-description">User Research</div>
               <div className="box-icon">
-                <img src={insta2} alt="" />
-                <img src={twitter} alt="" />
-                <img src={facebook} alt="" />
+                <img className="team-icon" src={insta2} alt="" />
+                <img className="team-icon" src={twitter} alt="" />
+                <img className="team-icon" src={facebook} alt="" />
               </div>
             </div>
           </div>
