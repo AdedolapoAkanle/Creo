@@ -283,6 +283,12 @@
   font-weight: 600;
 }
 
+.about-image {
+  height: 550px;
+  width: 550px;
+  margin-top: 40px;
+}
+
 .list-val {
   font-size: 24px;
   display: flex;
@@ -1053,7 +1059,7 @@
 
 .img-container {
   position: relative;
-  margin: 0 18px;
+  margin: 0 28px;
 }
 
 .text-block {
@@ -1215,6 +1221,7 @@ p {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
+  cursor: pointer;
 }
 
 /* @media screen and (min-width: 375px) {
@@ -1317,15 +1324,15 @@ p {
 
 .footer-name {
   text-transform: uppercase;
-  margin-left: 60px;
-  margin-top: 50px;
+  margin-left: 70px;
+  margin-top: 30px;
   font-size: 40px;
   font-family: "Aladin", cursive;
 }
 
 .footer-text {
   margin-top: 27px;
-  margin-right: 40px;
+  margin-right: 60px;
   text-align: center;
   font-size: 18px;
   font-weight: 100;
