@@ -105,6 +105,12 @@
   cursor: pointer;
 }
 
+.theme-btn {
+  font-size: 22px;
+  font-weight: 100;
+  margin-top: 5px;
+}
+
 /* Media Query - Main Section */
 @media screen and (max-width: 750px) {
   .main {

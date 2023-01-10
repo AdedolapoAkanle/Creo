@@ -29,6 +29,7 @@ import twt from "./img/twt.png";
 import arrow from "./img/Arrow.png";
 import clock from "./img/clock.png";
 import map from "./img/map.png";
+import { ImSun } from "react-icons/im";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -43,8 +44,7 @@ function App() {
     document.body.className = theme;
   }, [theme]);
   return (
-    <div className="App">
-      <button onClick={toggleTheme}>Switch</button>
+    <div className={`App ${theme}`}>
       <div className="container">
         <section className="section">
           <div className="blur">
@@ -55,6 +55,9 @@ function App() {
                 <ul className="li">About Us</ul>
                 <ul className="li">Pricing</ul>
                 <ul className="li">Contact Us</ul>
+                <ul className="li">
+                  <ImSun className="theme-btn" onClick={toggleTheme} />
+                </ul>
               </li>
             </div>
             <div className="main">
@@ -117,7 +120,7 @@ function App() {
         </section>
 
         {/* Offer section */}
-        <section className={`offer-section ${theme}`}>
+        <section className="offer-section">
           <div className="offer-header">
             What we Offer <hr className="offer-hr" />
           </div>
