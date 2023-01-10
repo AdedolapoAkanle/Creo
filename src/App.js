@@ -375,7 +375,7 @@ function App() {
               <div className="image-container">
                 <img className="team-image" src={img4} alt="" />
               </div>
-              <div className="box-name">thomas jackson</div>
+              <div className="box-name">annie doe</div>
               <div className="box-description">CEO</div>
               <div className="box-icon">
                 <img className="team-icon" src={insta2} alt="" />
@@ -387,7 +387,7 @@ function App() {
               <div className="image-container">
                 <img className="team-image" src={img3} alt="" />
               </div>
-              <div className="box-name">thomas jackson</div>
+              <div className="box-name">angelina doe</div>
               <div className="box-description">User Research</div>
               <div className="box-icon">
                 <img className="team-icon" src={insta2} alt="" />
