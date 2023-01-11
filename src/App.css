@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
 .dark {
-  background-color: #111;
-  color: #fff;
+  background-color: #040402;
+  /* color: #fff; */
 }
 .light {
   background-color: #fff;
-  color: #333;
+  /* color: #333; */
 }
 
-.grey {
+.gray {
   background-color: #333;
-  color: #111;
+  /* color: #111; */
 }
 
 /* Main section */
@@ -262,16 +262,23 @@
 .about {
   font-size: 32px;
   text-transform: capitalize;
-  color: #3a3a3a;
+  color: #50595c;
   font-weight: 600;
+}
+
+#dark .about {
+  color: #fff;
 }
 
 .about-text {
   margin-top: 18px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 36px;
   color: rgba(58, 58, 58, 0.7);
+}
+#dark .about-text {
+  color: #fff;
 }
 
 .about-hr {
@@ -287,6 +294,10 @@
   font-size: 24px;
   color: #3a3a3a;
   font-weight: 600;
+}
+
+#dark .about-list {
+  color: #fff;
 }
 
 .about-image {
@@ -459,8 +470,12 @@
 
 /* Offer Section */
 .offer-section {
-  background-color: #f2f2f2;
+  background-color: #e5e5e5;
   height: 90vh;
+}
+
+#dark .offer-section {
+  background-color: #111;
 }
 
 .offer-image {
@@ -473,6 +488,10 @@
   padding-top: 50px;
   font-size: 32px;
   color: #3a3a3a;
+}
+
+#dark .offer-header {
+  color: #fff;
 }
 
 .offer-head {
@@ -491,8 +510,13 @@
   padding: 0 40px;
   margin-top: 10px;
   font-size: 18px;
-  line-height: 36px;
+  font-weight: 100;
+  line-height: 38px;
   color: rgba(58, 58, 58, 0.7);
+}
+
+#dark .option-text {
+  color: #fff;
 }
 
 .offer-hr {
@@ -595,6 +619,11 @@
   width: 300px;
 }
 
+#dark .card {
+  background-color: #111;
+  color: #fff;
+}
+
 .card-type {
   text-align: center;
   font-size: 16px;
@@ -663,6 +692,10 @@
   cursor: pointer;
 }
 
+#dark .card-btn {
+  background: linear-gradient(to right, #45e6fc 0%, #356eff 100%);
+}
+
 .card-btn-1 {
   margin-top: 210px;
 }
@@ -671,6 +704,10 @@
   background-color: #ffff;
   color: #356eff;
   margin-top: 116px;
+}
+
+#dark .card-btn-blue {
+  color: #fff;
 }
 
 .check {
@@ -819,6 +856,10 @@
   background-color: #e5e5e5;
 }
 
+#dark .works-section {
+  background-color: #111;
+}
+
 .picture-container {
   display: flex;
   justify-content: space-between;
@@ -913,7 +954,7 @@
 
 .team-section {
   height: 100vh;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
 }
 
 .box-container {
@@ -1053,6 +1094,10 @@
   height: 100vh;
 }
 
+#dark .latest-section {
+  background-color: #111;
+}
+
 .latest-image {
   display: flex;
   margin-top: 40px;
@@ -1094,7 +1139,44 @@ p {
   font-weight: 100;
 }
 
-/* @media screen and (min-width: 375px) {
+/* @media screen and (min-width: 750px) {
+  .latest-section {
+    height: 45vh;
+  }
+
+  .latest-image {
+    margin-top: 10px;
+  }
+  .latest-img {
+    width: 150px;
+    height: 130px;
+  }
+
+  .img-container {
+    width: 80px;
+    margin: 12px 95px;
+  }
+
+  .text-block {
+    width: 180px;
+    bottom: 1px;
+    left: 17px;
+    font-size: 14px;
+  }
+
+  .clock {
+    width: 10px;
+    margin-bottom: -1px;
+    margin-right: 3px;
+  }
+
+  p {
+    font-size: 12px;
+    margin: 5px 57px;
+  }
+}
+
+@media screen and (max-width: 465px) {
   .latest-section {
     height: 45vh;
   }
@@ -1129,43 +1211,6 @@ p {
   p {
     font-size: 6px;
     margin: 5px 43px;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .latest-section {
-    height: 45vh;
-  }
-
-  .latest-image {
-    margin-top: 10px;
-  }
-  .latest-img {
-    width: 200px;
-    height: 180px;
-  }
-
-  .img-container {
-    width: 80px;
-    margin: 12px 95px;
-  }
-
-  .text-block {
-    width: 180px;
-    bottom: 1px;
-    left: 17px;
-    font-size: 14px;
-  }
-
-  .clock {
-    width: 10px;
-    margin-bottom: -1px;
-    margin-right: 3px;
-  }
-
-  p {
-    font-size: 12px;
-    margin: 5px 57px;
   }
 } */
 
@@ -1212,11 +1257,18 @@ p {
   border-image-slice: 1;
   width: 100%;
   font-size: 15px;
-  /* color: #333; */
+  color: #333;
+}
+
+#dark .input {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .input:focus {
   outline: none;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, #45e6fc, #356eff);
+  border-image-slice: 1;
 }
 
 .contact-btn {
