@@ -686,6 +686,12 @@
   font-weight: 600;
 }
 
+#dark .card-price {
+  background: linear-gradient(to right, #45e6fc 0%, #356eff 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
 .card-symbol {
   font-size: 16px;
   margin-top: 15px;
@@ -1162,6 +1168,36 @@
   }
 }
 
+@media screen and (max-width: 420px) {
+  .works-section {
+    height: 45vh;
+  }
+
+  .picture-container {
+    margin: 30px 10px;
+  }
+
+  .work-image {
+    margin: 5px 0px;
+    width: 120px;
+    height: 90px;
+  }
+
+  .image-tag {
+    margin-top: -7px;
+    margin-bottom: 15px;
+    padding: 7px 6px;
+  }
+
+  .image-name {
+    font-size: 6px;
+  }
+
+  .image-link {
+    font-size: 4px;
+  }
+}
+
 /* Team Section */
 
 .team-section {
@@ -1192,6 +1228,10 @@
   color: #3a3a3a;
 }
 
+#dark .box-name {
+  color: #fff;
+}
+
 .image-container {
   text-align: center;
 }
@@ -1201,6 +1241,10 @@
   font-size: 18px;
   color: rgba(58, 58, 58, 0.7);
   margin-top: 10px;
+}
+
+#dark .box-description {
+  color: #fff;
 }
 .box-icon {
   display: flex;
@@ -1437,6 +1481,81 @@ p {
     display: flex;
     flex-wrap: wrap;
     margin: 20px 70px;
+  }
+  .latest-img {
+    width: 145px;
+    height: 125px;
+  }
+
+  .img-container {
+    margin: 12px 8px;
+  }
+
+  .text-block {
+    width: 120px;
+    bottom: 1px;
+    left: 17px;
+    font-size: 8px;
+  }
+
+  .clock {
+    width: 6px;
+    margin-bottom: 1px;
+    margin-right: 3px;
+  }
+
+  p {
+    font-size: 6px;
+    margin: 5px 43px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .latest-section {
+    height: 40vh;
+  }
+
+  .latest-image {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 60px;
+  }
+  .latest-img {
+    width: 145px;
+    height: 125px;
+  }
+
+  .img-container {
+    margin: 12px 8px;
+  }
+
+  .text-block {
+    width: 120px;
+    bottom: 1px;
+    left: 17px;
+    font-size: 8px;
+  }
+
+  .clock {
+    width: 6px;
+    margin-bottom: 1px;
+    margin-right: 3px;
+  }
+
+  p {
+    font-size: 6px;
+    margin: 5px 43px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .latest-section {
+    height: 40vh;
+  }
+
+  .latest-image {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 20px;
   }
   .latest-img {
     width: 145px;
