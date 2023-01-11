@@ -785,7 +785,7 @@
 
 @media screen and (max-width: 465px) {
   .pricing-section {
-    height: 45vh;
+    height: 35vh;
   }
 
   .cards {
@@ -793,9 +793,9 @@
   }
 
   .card {
-    height: 30vh;
+    height: 20vh;
     width: 110px;
-    margin: 0 5px;
+    margin: 20px 5px;
   }
 
   .card-type {
@@ -832,15 +832,15 @@
     width: 50px;
     padding: 6px 8px;
     font-size: 7px;
-    margin: 15px 20px;
+    margin: 18px 20px;
   }
 
   .card-btn-1 {
-    margin-top: 82px;
+    margin-top: 87px;
   }
 
   .card-btn-blue {
-    margin-top: 48px;
+    margin-top: 53px;
   }
 
   .check {
@@ -900,19 +900,44 @@
   cursor: pointer;
 }
 
-/* @media screen and (min-width: 375px) {
+@media screen and (max-width: 750px) {
   .works-section {
-    height: 40vh;
+    height: 45vh;
   }
 
   .picture-container {
-    margin: 10px 0px;
+    padding: 0px;
+    margin: 10px 100px;
+  }
+
+  .work-image {
+    margin: 5px 2px;
+    width: 150px;
+    height: 120px;
+  }
+
+  .image-name {
+    font-size: 10px;
+  }
+
+  .image-link {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .works-section {
+    height: 35vh;
+  }
+
+  .picture-container {
+    margin: 10px 40px;
   }
 
   .work-image {
     margin: 5px 0px;
-    width: 100px;
-    height: 70px;
+    width: 120px;
+    height: 90px;
   }
 
   .image-tag {
@@ -928,27 +953,7 @@
   .image-link {
     font-size: 4px;
   }
-} */
-
-/* @media screen and (min-width: 650px) {
-  .picture-container {
-    padding: 10px 20px;
-  }
-
-  .work-image {
-    margin: 5px 10px;
-    width: 150px;
-    height: 120px;
-  }
-
-  .image-name {
-    font-size: 10px;
-  }
-
-  .image-link {
-    font-size: 8px;
-  }
-} */
+}
 
 /* Team Section */
 
@@ -1005,49 +1010,7 @@
   justify-content: space-between;
 }
 
-/* @media screen and (min-width: 375px) {
-  .team-section {
-    height: 45vh;
-  }
-
-  .box-container {
-    margin: 25px 0px;
-  }
-
-  .box {
-    width: 100px;
-    padding: 20px 10px;
-    margin: 0 5px;
-  }
-
-  .box-name {
-    font-size: 10px;
-  }
-
-  .box-description {
-    font-size: 6px;
-    margin-top: 5px;
-  }
-  .box-icon {
-    width: 75px;
-    margin-top: 15px;
-    margin-left: 11px;
-  }
-
-  .team-hr {
-    height: 1px;
-  }
-
-  .team-image {
-    width: 50px;
-  }
-
-  .team-icon {
-    width: 15px;
-  }
-} */
-
-/* @media screen and (min-width: 600px) {
+@media screen and (max-width: 750px) {
   .team-section {
     height: 35vh;
   }
@@ -1085,7 +1048,49 @@
   .team-icon {
     width: 18px;
   }
-} */
+}
+
+@media screen and (max-width: 500px) {
+  .team-section {
+    height: 30vh;
+  }
+
+  .box-container {
+    margin: 25px 0px;
+  }
+
+  .box {
+    width: 100px;
+    padding: 20px 10px;
+    margin: 0 5px;
+  }
+
+  .box-name {
+    font-size: 10px;
+  }
+
+  .box-description {
+    font-size: 6px;
+    margin-top: 5px;
+  }
+  .box-icon {
+    width: 75px;
+    margin-top: 15px;
+    margin-left: 11px;
+  }
+
+  .team-hr {
+    height: 1px;
+  }
+
+  .team-image {
+    width: 50px;
+  }
+
+  .team-icon {
+    width: 15px;
+  }
+}
 
 /* Latest Section */
 
@@ -1139,22 +1144,24 @@ p {
   font-weight: 100;
 }
 
-/* @media screen and (min-width: 750px) {
+@media screen and (max-width: 750px) {
   .latest-section {
     height: 45vh;
   }
 
   .latest-image {
-    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px 110px;
   }
+
   .latest-img {
-    width: 150px;
-    height: 130px;
+    width: 200px;
+    height: 180px;
   }
 
   .img-container {
-    width: 80px;
-    margin: 12px 95px;
+    margin: 5px 30px;
   }
 
   .text-block {
@@ -1178,13 +1185,13 @@ p {
 
 @media screen and (max-width: 465px) {
   .latest-section {
-    height: 45vh;
+    height: 40vh;
   }
 
   .latest-image {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin: 20px 70px;
   }
   .latest-img {
     width: 145px;
@@ -1192,7 +1199,7 @@ p {
   }
 
   .img-container {
-    margin: 12px 20px;
+    margin: 12px 8px;
   }
 
   .text-block {
@@ -1212,7 +1219,7 @@ p {
     font-size: 6px;
     margin: 5px 43px;
   }
-} */
+}
 
 /* Contact section  */
 
@@ -1282,7 +1289,49 @@ p {
   cursor: pointer;
 }
 
-/* @media screen and (min-width: 375px) {
+@media screen and (max-width: 750px) {
+  .contact-section {
+    height: 30vh;
+  }
+
+  .contact {
+    margin: 10px;
+  }
+
+  .contact-field {
+    margin-top: 50px 15px;
+  }
+
+  .contact-info {
+    padding: 12px 0;
+    width: 300px;
+  }
+
+  .contact-map {
+    margin: 40px 20px;
+    margin-left: 40px;
+  }
+
+  .map {
+    height: 200px;
+    width: 200px;
+  }
+
+  .input {
+    padding: 10px 0;
+    margin: 14px 0;
+    font-size: 10px;
+  }
+
+  .contact-btn {
+    padding: 8px 12px;
+    width: 50px;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 465px) {
   .contact-section {
     height: 30vh;
   }
@@ -1324,48 +1373,6 @@ p {
     font-size: 7px;
   }
 }
-
-@media screen and (min-width: 600px) {
-  .contact-section {
-    height: 30vh;
-  }
-
-  .contact {
-    margin: 10px;
-  }
-
-  .contact-field {
-    margin-top: 50px 15px;
-  }
-
-  .contact-info {
-    padding: 12px 0;
-    width: 300px;
-  }
-
-  .contact-map {
-    margin: 40px 20px;
-    margin-left: 40px;
-  }
-
-  .map {
-    height: 200px;
-    width: 200px;
-  }
-
-  .input {
-    padding: 10px 0;
-    margin: 14px 0;
-    font-size: 10px;
-  }
-
-  .contact-btn {
-    padding: 8px 12px;
-    width: 50px;
-    margin-top: 10px;
-    font-size: 10px;
-  }
-} */
 
 /* Footer section */
 
@@ -1433,7 +1440,48 @@ p {
   cursor: pointer;
 }
 
-/* @media screen and (min-width: 375px) {
+@media screen and (max-width: 750px) {
+  .footer-section {
+    height: 15vh;
+  }
+
+  .footer-name {
+    margin-left: 20px;
+    margin-top: 45px;
+    font-size: 23px;
+  }
+
+  .footer-text {
+    margin-top: 35px;
+    margin-right: 20px;
+    font-size: 12px;
+  }
+
+  .footer-field {
+    width: 140px;
+    font-size: 11px;
+  }
+
+  .footer-input {
+    padding: 2px 5px;
+    margin-top: 10px;
+  }
+
+  .footer-icon {
+    width: 15px;
+  }
+
+  .span {
+    width: 60px;
+    margin-top: 10px;
+  }
+
+  .arrow {
+    width: 9px;
+  }
+}
+
+@media screen and (max-width: 465px) {
   .footer-section {
     height: 12vh;
   }
@@ -1472,4 +1520,4 @@ p {
   .arrow {
     width: 9px;
   }
-} */
+}
